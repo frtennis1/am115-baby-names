@@ -37,7 +37,7 @@ Literature
 Work Log
 --------
 
-### Wednesday Oct 25
+### Wednesday Oct 24
 
 Francisco and Mark met at office hours to settle on a topic idea. The search was
 motivated by availability of data as well as transferability of models we have
@@ -46,5 +46,27 @@ diffusion models could be applicable.
 
 ### Thursday Oct 25
 
-Present in class.
+Francisco and Mark presented the [initial slideshow](slide-show.md) of the
+project. Through the Q&A, there were a couple of take-aways,
 
+- The importance of interpretability when constructing the model.
+- A potential consideration of competition among names "taking share" from each
+  other.
+- Simplifications when thinking about the topology of the United States
+  (adjacency network, east-west dimension, north-south dimension, etc)
+
+Data Source
+-----------
+
+The data for this project comes from <https://data.gov>. The data files are not
+checked into the repository, and can be pulled from the following links.
+
+- [National baby data](https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-level-data)
+- [State baby data](https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-data-by-state-and-district-of-)
+
+Notebooks
+---------
+
+- [Data Exploration](01-data-exploration.ipynb) houses the initial data-reading
+  code for national name data. It reads from the raw data files to create
+  curated aggregations, and visualizes some of the data's trends.
