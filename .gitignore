@@ -1,3 +1,7 @@
 names/*
 namesbystate/*
+data/*
 .ipynb_checkpoints/*
+__pycache__/*
+*pptx
+*swp
