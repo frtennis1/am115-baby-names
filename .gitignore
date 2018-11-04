@@ -2,6 +2,14 @@ names/*
 namesbystate/*
 data/*
 .ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+*/*/.ipynb_checkpoints/*
 __pycache__/*
 *pptx
 *swp
+*aux
+*log
+*bbl
+*blg
+*out
+*gz

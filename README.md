@@ -61,11 +61,16 @@ Francisco read through Hahn and Bentley (2003), understanding their random
 imitation model and using it to
 
 1. performing algebraic analysis on its implications for variance over time
-2. confirming these analysis by running numerical simulations that contrast
+2. confirming these analyses by running numerical simulations that contrast
    possible paths of name popularity this model predicts vs what we observe.
 
-Both analysis concur that this model is insufficient to explain the boom-bust
+Both analyses concur that this model is insufficient to explain the boom-bust
 cycles that we observe in name popularity over time.
+
+### Saturday Nov 4
+
+Francisco started the write-up including sketching out the outline and writing
+up some of the stylized facts being taken away from inspection of the data.
 
 Data Source
 -----------
@@ -86,6 +91,14 @@ Notebooks
   code for national name data. It reads from the raw data files to create
   curated aggregations, and visualizes some of the data's trends.
 
-- [Time Models Single Name](02-time-models-single-name.ipynb) explores a class
-  of models which look at a single name in isolation without considering
-  diffusion across states (looking at national prevalence only).
+- [Imitation Model](02-imitation-model.ipynb) explores the Hahn and Bentley
+  (2003) model as a null hypothesis for trend evolution, finding that the
+  variance predicted is too small to explain the boom of popular names.
+
+- [In-Group Imitation](03-ingroup-imitation.ipynb) looks at a model of imitation
+  with a segmented population into a desirable "in"-group and an imitating
+  "out"-group.
+
+- [Prediction Problem](04-prediction-problem.ipynb) treats this problem as an AR
+  time series model to get a benchmark for the predictability of the data
+  without using any model structure

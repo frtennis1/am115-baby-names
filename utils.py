@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def get_name_series(name, df, center=False):
     name_series = df.xs(name, level='name').groupby('year').sum()
     if center:
