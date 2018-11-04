@@ -102,3 +102,16 @@ Notebooks
 - [Prediction Problem](04-prediction-problem.ipynb) treats this problem as an AR
   time series model to get a benchmark for the predictability of the data
   without using any model structure
+
+To-dos
+------
+
+[ ] Write up algebraic analysis for imitation model
+[ ] Perform likelihood test for imitation model
+
+[ ] Write up the motivation for the in/out-group  model
+[ ] Perform likelihood test for in/out-group model
+
+[x] Perform likelihood test for predictive baseline (done, Francisco)
+
+[ ] Think about geo-spatial extensions
