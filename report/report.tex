@@ -3,6 +3,7 @@
 % Last Change: Sat Nov 03 06:00 PM 2018 E
 %
 \documentclass[a4paper]{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[noabbrev,capitalise]{cleveref}
@@ -64,6 +65,63 @@ this upper bound need not be binding for many names
 We will follow \cite{hahn2003drift} closely.
 
 \section{Segmenting the population}
+
+The shortcoming with the imitation model or a model like it is that the
+evolution of name popularity appears to behave differently on the up-swing than
+the down-swing. This became starkly inconsistent with the imitation model in the
+amount of variance we see from year-to-year in name popularity, but even if the
+variance matched, we consistently see a boom followed by a bust in name
+popularity, which remains unexplainable by this model.
+
+This suggests that there is something different in the adoption of a name at
+different points in the stylized lifecycle of popularity. One way to model this
+is by segmenting the population, akin to the work on fads done in
+\cite{bergman2012fad}. We posit that there are two sub-populations: an ``in''
+group and an ``out''-group. ``In''-group membership is desirable, and members of
+this group try to distinguish themselves through names distinctive of the group,
+but not over-used. However, there is not a separating equilibrium because
+members of the out-group also wish to adopt desirable in-group names. Thus, they
+too wish to take on names most representative of the in-group. However, we posit
+that the out-group will only be able to react to lagged information of name
+popularity.
+
+Mathematically, then, in our most general form, we are suggesting if
+$p_\text{in}^{(i)}{(t)}$ (respectively $p_\text{out}^{(i)}{(t)}$) are the
+proportion of the in-group (respectively out-group) at time $t$ given name $i$,
+then our evolution equations are,
+
+\begin{align*}
+\frac{d p_\text{in}^{(i)}}{dt} &= \alpha_\text{in} \cdot p_\text{in}^{(i)}
+\bigg(K_\text{in} - p_\text{in}^{(i)} - \beta_\text{in} \cdot
+p_\text{out}^{(i)}\bigg) \\
+\frac{d p_\text{out}^{(i)}(t)}{dt} &= \alpha_\text{out} \cdot p_\text{out}^{(i)}
+\bigg( p_\text{in}^{(i)}(t-\tau) - \beta_\text{out} \cdot
+p_\text{out}^{(i)}(t-\tau) \bigg)
+\end{align*}
+
+In this equations, the $\alpha$ parameters represent a sensitivity of the system
+to its pressures, i.e. it calibrates how quickly members of the in and out-group
+react to incentives to shift toward or away a name. $K_\text{in}$ represents the
+maximal sustainable size of the proportion of the in-group with the name in the
+absence of any out-group adopters. The $\beta$ parameters capture aversion to
+names being used by members of the out-group, and $\tau$ represents the lag with
+which members of the out-group can observe name trends.
+
+\subsection{Numerical simulation}
+
+In order to better understand the behavior these 
+
+\section{Evaluating the model}
+
+\subsection{Qualitative evaluation}
+
+\subsection{Likelihood tests}
+
+\subsection{Pursuing additional data}
+
+\section{Simplifying the model}
+
+\section{Model shortcomings}
 
 \bibliography{sources}
 \bibliographystyle{apalike}
