@@ -13,3 +13,4 @@ __pycache__/*
 *blg
 *out
 *gz
+.DS_Store
