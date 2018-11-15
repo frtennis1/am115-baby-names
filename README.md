@@ -1,8 +1,11 @@
 Baby Name Popularity Model
 ==========================
 
+See the final report [here](report/report.pdf).
+
 About
 -----
+
 
 This is the repository for the work involved in Harvard's Fall 2018 Applied Math
 115: Mathematical Modeling first project. It details the modeling process
